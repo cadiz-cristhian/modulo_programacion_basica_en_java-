@@ -1,0 +1,2 @@
+En esta clase comencé a realizar el cuestionarioController el cual contiene la mayor parte del codigo para que el usuario pueda hacer un
+cuestionario y este le indique cual es el resultado de su elección.

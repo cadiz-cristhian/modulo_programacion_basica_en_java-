@@ -1,0 +1,2 @@
+En esta clase vimos como ocupar el WHILE utilizando lo aprendido el día de ayer. 
+Tambien aprendí a diferenciar los tipos de operadores que se utilizan en java.

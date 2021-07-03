@@ -1,0 +1,21 @@
+package inicio;
+import java.util.Scanner;
+
+public class EjercicioWhile {
+
+	public static void main(String[] args) {
+		Scanner lector = new Scanner(System.in);
+		System.out.println("ingrese Número");
+		int a = lector.nextInt();
+		int factor = 1;
+		while(a != 0)
+		{
+			factor = factor*a;
+			a--;
+		}
+		System.out.println("numero factorial es: " + factor);
+		lector.close();
+		
+	}
+
+}

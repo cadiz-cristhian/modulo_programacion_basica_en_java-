@@ -1,0 +1,3 @@
+En esta clase avance con el diagrama de flujo de un metodo para realizar el cuestionario de la app, el cual
+cuenta con 15 preguntas que se harán al azar y según los resultados que se obtengan mostrará una lista de 5 peliculas que
+le podrían gustar a la persona.

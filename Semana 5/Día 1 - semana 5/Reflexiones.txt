@@ -1,0 +1,3 @@
+En esta sesión avancé en el diagrama de clases cómo una primera versión sin las relaciones entre ellas. Tambien investigué
+sobre la programación que haré en el programa eclipse.
+ 

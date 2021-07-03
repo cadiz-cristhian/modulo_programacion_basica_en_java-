@@ -1,0 +1,4 @@
+En esta clase hice una revisión de 2 diagramas de flujo del programa.
+Los 2 tienen que ver con el regristro y consulta de datos del usuario, aparte de 
+investigar sobre el diagrama de clases y empezar a visualizar de cierta forma el funcionamiento
+de la app

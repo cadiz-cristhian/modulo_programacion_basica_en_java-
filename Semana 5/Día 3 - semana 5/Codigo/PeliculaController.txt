@@ -1,0 +1,66 @@
+package Controller;
+
+import java.util.HashMap;
+
+import Datos.Pelicula;
+
+public class PeliculaController {
+	
+// Se genera Hashmap del objeto Pelicula
+	HashMap<Integer, Pelicula> pelicula = new HashMap<Integer,Pelicula>();
+
+// Metodos para Cargar peliculas según su genero
+	public void CargarPeliculaTerror()
+	{
+		pelicula.put(1, new Pelicula("Psicosis","1960","Alfred Hitchcock",8.5,"Terror"));
+		pelicula.put(2, new Pelicula("Alien, el octavo pasajero","1979","Ridley Scott",8.4,"Terror"));
+		pelicula.put(3, new Pelicula("Tumbbad","2018","Rahi Anil Barve",8.3,"Terror"));
+		pelicula.put(4, new Pelicula("I saw the devil","2010","Jee-woon Kim",7.8,"Terror"));
+		pelicula.put(5, new Pelicula("Get Out","2017","Jordan Peele ",7.7,"Terror"));
+		pelicula.put(6, new Pelicula("A nightmare on elm street","1984","Wes Craven",7.5,"Terror"));
+		pelicula.put(7, new Pelicula("Texas Chainsaw Massacre","1974","Tobe Hooper",7.5,"Terror"));
+		pelicula.put(8, new Pelicula("EraserHead","1977","David Lynch",7.4,"Terror"));
+		pelicula.put(9, new Pelicula("Hereditary","2018","Ari Aster",7.3,"Terror"));
+		pelicula.put(10, new Pelicula("Midsommar","2019","Ari Aster",7.1,"Terror"));
+	}
+	public void CargarPeliculaDrama()
+	{
+		pelicula.put(1, new Pelicula("Parasite","2019","Bong Joon Ho",8.6,"Drama"));
+		pelicula.put(2, new Pelicula("Gone Girl","2014","David Fincher",8.1,"Drama"));
+		pelicula.put(3, new Pelicula("Portrait de la jeune fille en feu","2019","Céline Sciamma",8.1,"Drama"));
+		pelicula.put(4, new Pelicula("Arrival","2016","David Villeneuve",7.9,"Drama"));
+		pelicula.put(5, new Pelicula("The Danish Girl","2015","Tom Hooper",7.1,"Drama"));
+		pelicula.put(6, new Pelicula("Laurance Anyways","2012","Xavier Dolan",7.7,"Drama"));
+		pelicula.put(7, new Pelicula("The Room","2015","Lenny Abrahamson",8.1,"Drama"));
+		pelicula.put(8, new Pelicula("Lady Bird","2017","Greta Gerwig",7.4,"Drama"));
+		pelicula.put(9, new Pelicula("Edward Scissorhands","1990","Tim Burton",7.9,"Drama"));
+		pelicula.put(10, new Pelicula("Becoming Jane","2007","Julian Jarrold",7.0,"Drama"));
+	}
+	public void CargarPeliculaAccion()
+	{
+		pelicula.put(1, new Pelicula("Inception","2010","Chistopher Nolan",8.8,"Acción"));
+		pelicula.put(2, new Pelicula("Matrix","1999","Lana & Lily Wachowski",8.7,"Acción"));
+		pelicula.put(3, new Pelicula("Predator","1987","John McTiernan",7.8,"Acción"));
+		pelicula.put(4, new Pelicula("Kill Bill: Volume 1","2003","Quentin Tarantino",8.1,"Acción"));
+		pelicula.put(5, new Pelicula("Mad Max","2015","George Miller",8.1,"Acción"));
+		pelicula.put(6, new Pelicula("Lucy","2014","Luc Besson",6.4,"Acción"));
+		pelicula.put(7, new Pelicula("The Hunger Games","2012","Gary Ross",7.2,"Acción"));
+		pelicula.put(8, new Pelicula("Jurassic Park","1993","Stephen Spielberg",8.1,"Acción"));
+		pelicula.put(9, new Pelicula("Harry Potter and the Sorcerer's Stone","2001","Chris Columbus",7.6,"Acción"));
+		pelicula.put(10, new Pelicula("The Dark Knight","2008","Christopher Nolan",9.0,"Acción"));
+	}
+	public void CargarPeliculaComedia()
+	{
+		pelicula.put(1, new Pelicula("El Grinch","2000","Ron Howard",6.2,"Comedia"));
+		pelicula.put(2, new Pelicula("Mean Girls","2003","Mark Waters",7.0,"Comedia"));
+		pelicula.put(3, new Pelicula("Bride Wars","2009","JGary Winick",5.5,"Comedia"));
+		pelicula.put(4, new Pelicula("Miss Congeniality","2000","Donald Petrie",6.3,"Comedia"));
+		pelicula.put(5, new Pelicula("Toy Story","1995","John Lasseter",8.3,"Comedia"));
+		pelicula.put(6, new Pelicula("The Grand Budapest Hotel","2014","Wes Anderson",8.1,"Comedia"));
+		pelicula.put(7, new Pelicula("The Truman Show","1998","Peter Weir",8.1,"Comedia"));
+		pelicula.put(8, new Pelicula("Easy A","2010","Will Gluck",7.0,"Comedia"));
+		pelicula.put(9, new Pelicula("Jojo Rabbit","2019","Taika Waititi",7.9,"Comedia"));
+		pelicula.put(10, new Pelicula("Shrek","2001","Andrew Adamson",7.9,"Comedia"));
+	}
+	
+}

@@ -1,0 +1,4 @@
+En esta clase vimos el uso de do - while para poder realizar un ejercicio en el cual se solicita que 
+el programa pueda reconocer si un número es par o inpar, si es primo o no.
+A pesar que fue un ejercicio un poco extenso, fue interesante ver las diferentes formas de hacerlo
+ 

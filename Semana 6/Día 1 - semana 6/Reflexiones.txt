@@ -1,0 +1,2 @@
+En estea clase implementé el metodo para que muestre la lista de peliculas al usuario, las cuales por ahora son 4.
+Estas son elegidas aleatoriamente dentro de un rango de 10 ( todo esto como prueba ).

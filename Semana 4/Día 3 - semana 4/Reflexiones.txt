@@ -1,0 +1,2 @@
+En esta clase investigué sobre cómo realizar el diagrama de clases y basandome en los diagramas anteriores
+pude calcular mas o menos la cantidad de clases que voy a ocupar basandome en la Programación orientada a objetos

@@ -1,0 +1,7 @@
+En esta clase avancé con las clases UsuarioController y PeliculaController. Las cuales harán lo siguiente:
+
+usuarioController: contiene el metodo agregar usuario, donde la información agregada por el usuario se guarda en 
+un Hashmap simulando el registro que se debería realizar en la aplicación final.
+
+peliculaController: En esta clase creé 4 metodos de CargarPelicula, los cuales son 1 por cada genero que se ocuparán
+y las peliculas se elegirán dependendiendo de lo que haga elegido el usuario. los separé por acción, terror, comedia y drama. 

@@ -1,0 +1,139 @@
+package Controller;
+
+
+import java.util.*;
+
+import Datos.Cuestionario;
+import Datos.Pregunta;
+
+public class CuestionarioController {
+
+Cuestionario cues = new Cuestionario();
+
+
+Scanner scan = new Scanner(System.in);
+HashMap<Integer,Integer> resp = new HashMap<Integer,Integer>(); //Hashmap que almacena las respuestas
+int total;
+String generoElegido;
+	
+	
+	public void ListaPreguntas()  // agregar las preguntas al cuestionario
+	{
+		int opcion;
+		
+		Pregunta ArrayPregunta[] = { new Pregunta("De los siguientes generos ¿cuál prefieres?", " 1) : " + "Terror", " 2) : " + "Comedia"," 3) : " + "Drama", " 4) : " + "Acción" ),
+									 new Pregunta("Si te persigue un monstruo, ¿ Qué harías?"," 1) : " + "¿Lo enfrentas y peleas con él?", " 2) : " + "¿Te escondes y esperas? " ," 3) : " + "¿Tratas de hablar con el para entender sus motivaciones?", " 4) : " + "¿Lo enfrentas porque crees que todo es una broma?"),
+									 new Pregunta("Encuentras a tu mejor amigue con tu novie. ¿Qué harías?"," 1): " + "Planeas una venganza " ," 2) : " + "Te ríes de la situación y te unes"," 3) : " + "Das un portazo y te pones a llorar ", " 4) : " + "Haces el viaje que siempre planeaste"),
+									 new Pregunta("Si tuvieras superpoderes ¿Cuál de estos elegirías?"," 1): " + "Leer la mente de las personas " ," 2) : " + "Ser Invisible "," 3) : " + "Tener Superfuerza ", " 4) : " + "Ser multimillonario "),
+									 new Pregunta("¿Cuál de las siguientes citas elegirías?"," 1) : " + "Una visita guiada al cementerio " , " 2) : " + "Hacer trekking "," 3) : " + "Ir a una Disco ", " 4) : " + "Cenar en un restaurant " )};
+	
+	System.out.println(ArrayPregunta[0]);
+	System.out.println("Ingresa tu respuesta (1,2,3 o 4)");
+	opcion = scan.nextInt();
+	
+	// Se le asigna un número a cada opción
+	// Terror = 1
+	// comedia = 2
+	// drama = 3
+	// accion = 4
+	switch(opcion)
+	{
+		case 1: resp.put(1, 1);
+		break;
+		case 2: resp.put(1, 2);
+		break;
+		case 3:	resp.put(1, 3);
+		break;
+		case 4: resp.put(1, 4);
+		break;
+	}
+	System.out.println(ArrayPregunta[1]);
+	opcion = scan.nextInt();
+	switch(opcion)
+	{
+		case 1: resp.put(2, 4);
+		break;
+		case 2: resp.put(2, 1);
+		break;
+		case 3:	resp.put(2, 3);
+		break;
+		case 4: resp.put(2, 2);
+		break;
+	}
+	System.out.println(ArrayPregunta[2]);
+	opcion = scan.nextInt();
+	switch(opcion)
+	{
+		case 1: resp.put(3, 1);
+		break;
+		case 2: resp.put(3, 2);
+		break;
+		case 3:	resp.put(3, 3);
+		break;
+		case 4: resp.put(3, 4);
+		break;
+	}
+	System.out.println(ArrayPregunta[3]);
+	opcion = scan.nextInt();
+	switch(opcion)
+	{
+		case 1: resp.put(4, 3);
+		break;
+		case 2: resp.put(4, 1);
+		break;
+		case 3:	resp.put(4, 4);
+		break;
+		case 4: resp.put(4, 2);
+		break;
+	}
+	System.out.println(ArrayPregunta[4]);
+	opcion = scan.nextInt();
+	switch(opcion)
+	{
+		case 1: resp.put(5, 1);
+		break;
+		case 2: resp.put(5, 4);
+		break;
+		case 3:	resp.put(5, 2);
+		break;
+		case 4: resp.put(5, 3);
+		break;
+	}
+	// Cuenta cuantas respuesta le corresponden a cada genero
+	int contTerror = Collections.frequency(resp.values(), 1);
+	int contComedia = Collections.frequency(resp.values(), 2);
+	int contDrama = Collections.frequency(resp.values(), 3);
+	int contAccion = Collections.frequency(resp.values(), 4);
+	
+	// si la opción es mayor que las demás se define el valor de la respuesta
+	if(contTerror > contComedia && contTerror > contDrama && contTerror > contAccion)
+	{
+		total = 1;
+		cues.respuesta = total;
+		generoElegido = "Terror";
+		
+	}
+	if(contComedia > contTerror && contComedia > contDrama && contComedia > contAccion)
+	{
+		total = 2;
+		cues.respuesta = total;
+		generoElegido = "Comedia";
+	}
+	if(contDrama > contTerror && contDrama > contComedia && contDrama > contAccion)
+	{
+		total = 3;
+		cues.respuesta = total;
+		generoElegido = "Drama";
+	}
+	if(contAccion > contTerror && contAccion > contComedia && contAccion > contDrama)
+	{
+		total = 4;
+		cues.respuesta = total;
+		generoElegido = "Acción";
+	}
+	System.out.println("Tu genero elegido es: " + generoElegido);
+	
+
+		
+	}
+}

@@ -1,0 +1,4 @@
+Hoy realizé un diagrama de flujo general de cómo espero que funcione la aplicación. Para asi tambien
+guiarme en los diagramas de los procedimientos por separado. 
+Me costó llegar a una conclusión ( por el momento ) de cómo podrían funcionar los procesos en general, pero 
+gracias al diagrama pude visualizar de mejor manera el orden y lo que necesito para que pueda funcionar correctamente.

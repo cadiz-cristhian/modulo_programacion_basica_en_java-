@@ -1,0 +1,3 @@
+En esta clase agregué el metodo GenerarListaUsuario() , el cual toma el resultado del cuestionario
+y elige 4 peliculas aleatorias de la lista, dependendiendo del genero elegido.
+  

@@ -1,0 +1,59 @@
+package Vista;
+
+
+
+import Controller.UserController;
+import Controller.CuestionarioController;
+import java.util.Scanner;
+
+public class Menu {
+	
+	
+
+	public static void main(String[] args) {
+		// Variables locales
+		Scanner scan = new Scanner(System.in);
+		CuestionarioController cc = new CuestionarioController();
+		UserController uc = new UserController();
+		String resp; 
+		String nombre;
+		String contrasena;
+		String correo;
+		int edad;
+		
+		// Inicio del programa
+		System.out.println("Bienvenido");
+		System.out.println("Ingresa tu nombre");
+		nombre = scan.nextLine();
+		System.out.println("Ingresa tu correo");
+		correo = scan.nextLine();
+		System.out.println("Ingresa tu contraseña");
+		contrasena = scan.nextLine();
+		System.out.println("Ingresa tu edad");
+		edad = scan.nextInt();
+		scan.nextLine();
+		// Se guarda el usuario ingresado
+		uc.AgregarUsuario(nombre, correo, contrasena, edad);
+		// Cuestionario
+		System.out.println("¿Quieres realizar un cuestionario? si , no");
+		resp = scan.nextLine();
+		
+		if( resp.equalsIgnoreCase("si"))
+		{
+			System.out.println("--------------------------------------------------------------------");
+			System.out.println("Responde las siguientes 5 preguntas");
+			cc.ListaPreguntas();
+			cc.GenerarListaUsuario();
+			System.out.println("--------------------------------------------------------------------");
+			
+		}
+		if( resp.equalsIgnoreCase("no"))
+		{
+			System.out.println("Adios");
+		}
+		scan.close();	
+		
+
+	}
+	
+}

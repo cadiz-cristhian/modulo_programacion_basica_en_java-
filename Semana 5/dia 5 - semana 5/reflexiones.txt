@@ -1,0 +1,2 @@
+En esta clase avancé en el Menu, para que se pudiera desplegar el cuestionario que el usuario realiza.
+Por ahora agregué 5 preguntas de prueba para ver el funcionamiento del metodo en cuestion.

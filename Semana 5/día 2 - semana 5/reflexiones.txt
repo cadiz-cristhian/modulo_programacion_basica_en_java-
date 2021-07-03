@@ -1,0 +1,2 @@
+En esta clase comencé a realizar el proyecto en el IDE eclipse, a primeras me costó un poco definir la estructura final de mi proyecto.
+Pero me decidí por hacerlo en el modelo vista - controlador. 

@@ -1,0 +1,3 @@
+Este día generé la planificación de la primera etapa del proyecto que costa de 4 semanas. Con la carta me quedan mas claro los tiempos 
+necesarios para cada parte del modulo. Tambien investigué las conexiones a bases de datos externas y cómo comenzar a realizar el diagrama de
+flujo.

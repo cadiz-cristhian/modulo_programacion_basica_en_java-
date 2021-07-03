@@ -1,0 +1,2 @@
+En esta clase hice una revisión del diagrama de flujo general de la app. Correjí los nombres definitivos
+de las base de datos entre otras correcciones

@@ -1,0 +1,4 @@
+En esta clase avancé en los primeros diagramas de flujo los cuales corresponden al registro de usuarios
+y la consulta de datos guardados. 
+En el diagrama de consulta de datos guardados vi que sería necesario tener 2 salidas porque el usuario tendrá la opción de
+hacer un nuevo cuestionario o salir.
